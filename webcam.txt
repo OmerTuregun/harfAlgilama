@@ -1,0 +1,11 @@
+import cv2
+
+# VideoCapture nesnesi oluştururken backend seçeneğini belirleyin
+cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)  # veya cv2.CAP_MSMF veya cv2.CAP_V4L
+
+while True:
+    ret, frame = cap.read()
+    if not ret:
+        break
+    
+    # Geri kalan kodunuz buraya gelecek...
